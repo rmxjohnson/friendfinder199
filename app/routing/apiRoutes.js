@@ -35,39 +35,24 @@ module.exports = function (app) {
         var newfriend = req.body;
         // scores array for new friend (req parameter)
         var newScores = req.body.scores;
-        // console.log("newscores = " + newScores);
         var bestIndex = 0;
         var bestCount = 9999;
 
-        // console.log(newfriend);
-        // console.log("friends" + friends + "friends.length = " + friends.length);
-
         // find "best match" for the new friend
         for (var i = 0; i < friends.length; i++) {
-            // console.log("bestCount = " + bestCount);
-            // console.log("current Scores = " + friends[i].scores);
             var loopDiff = 0;
             for (var j = 0; j < newScores.length; j++) {
                 loopDiff = loopDiff + Math.abs(newScores[j] - friends[i].scores[j]);
-                // console.log("loopDiff = " + loopDiff);
             }
-            // console.log("Final Loop Diff = " + loopDiff);
+
+            // update the bestIndex if this difference is the lowest
             if (loopDiff < bestCount) {
                 bestIndex = i;
                 bestCount = loopDiff;
-                // console.log("new best friend = " + i);
             }
-
-            // console.log("name = " + friends[i].name);
-            // console.log("photo = " + friends[i].photo);
-            // console.log("scores = " + friends[i].scores);
         }
+
         var bestfriend = friends[bestIndex];
-        // console.log("bestfriend name = " + bestfriend.name);
-        // console.log("bestfriend photo = " + bestfriend.photo);
-        // console.log("bestfriend scores = " + bestfriend.scores);
-        // console.log("friendlist" + friends.friendList);
-        // console.log("friends" + friends);
 
         // add new entry to friends array
         friends.push(newfriend);

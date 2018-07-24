@@ -9,18 +9,16 @@ Rhonda Johnson
 FriendFinder is an app which uses a series of survey questions to find the best compatible friend.  This ful-stack site takes in results from the users' surveys, then compares their answers with those from other users.  The app will then display the name and picture of the user with the best overall match. 
 
 # Link to deployed project
-https://friendfinder130.herokuapp.com/
+https://friendfinder199.herokuapp.com/
 
-# Heroku Git URL
-https://git.heroku.com/friendfinder130.git
+# Link to GitHub
+https://rmxjohnson.github.io/friendfinder199/
+
 
 # Built with:
  * Node.js
  * NPM packages:  express, body-parser, path
-
  * Express is used to handle the routing
-   
-
 
 ## Synopsis 
 

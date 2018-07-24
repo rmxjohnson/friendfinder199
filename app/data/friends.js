@@ -1,6 +1,6 @@
 
 //array to hold data for 'friends' that have taken the survey
-//initialize with data
+//initialize with seed data
 var friendList = [
     {
         name: 'Suzy Smith',

@@ -1,3 +1,6 @@
+<!-- Rhonda Johnson -->
+<!-- survey page -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -202,7 +205,7 @@
                                         </button>
                                     </a> |
                                     <a href="/api/friends">API Friends List</a> |
-                                    <a href="https://github.com/afhague/friendfinder">GitHub Repo</a>
+                                    <a href="https://rmxjohnson.github.io/friendfinder199/">GitHub Repo</a>
                                 </p>
                             </div>
                         </footer>
@@ -281,10 +284,10 @@
                 console.log("currentURL = " + currentURL);
 
 
-                // post the data to the friends API
+                // post the newFriend; new bff is the data that is returned from the post
                 $.post(currentURL + "/api/friends", newFriend).then(function (data) {
 
-                    //add data to the modal
+                    //add data to the modal - returned from the post
                     $("#bff-name").text(data.name);
                     $("#bff-img").attr("src", data.photo);
 
