@@ -11,7 +11,8 @@ FriendFinder is an app which uses a series of survey questions to find the best 
 # Link to deployed project
 https://friendfinder199.herokuapp.com/
 
-# Link to GitHub
+# Links to GitHub
+https://github.com/rmxjohnson/friendfinder199.git
 https://rmxjohnson.github.io/friendfinder199/
 
 
